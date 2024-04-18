@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+:root {
+    --stopwatch-primary-color: #336699;
+    --stopwatch-primary-shade: #4785C2;
+    --stopwatch-secondary-color: #9EE493;
+    --stopwatch-secondary-shade: #7BDA6C;
+    --stopwatch-light-color: #DAF7DC;
+    --body-background-color: #86BBD8;
+}
+
+@media(max-width: 600px) {
+    :root {
+        font-size: 10px;
+    }
+    
+}
+
+button{
+    all: unset;
+    cursor: pointer;
+    border: 2px solid var(--stopwatch-light-color);
+    padding: 0.5rem;
+    border-radius: 15px;
+    background-color:var(--stopwatch-secondary-color) ;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    background-color: var(--body-background-color);
+    font-size: 3rem;
+}
+
+button.secondary-button {
+    background-color: var(--stopwatch-primary-color);
+    color: var(--stopwatch-secondary-color);
+}
+
+button:hover {
+    background-color: var(--stopwatch-secondary-shade);
+}
+
+button.secondary-button:hover {
+    background-color: var(--stopwatch-primary-shade);
+}
+
+button:focus{
+    border: 2px solid #000;
+}
+#stop-wrapper{
+    background-color: var(--stopwatch-primary-color);
+    padding: 1rem;
+    border-radius: 15px ;
+}
+
+#button-box {
+    margin: 1rem 0 0.5rem 0;
+}
+
+#stop-wrapper > p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;
+    color: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
